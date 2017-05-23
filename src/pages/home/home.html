@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Message :
+  <p>
+    <ion-input type="text" [(ngModel)]="msg" name="msg"></ion-input>
+    <button ion-button (click)="sendMsg()">Envoyer</button>
+  </p>
+  <p>
+    <button ion-button (click)="join()">Join</button>
+  </p>
+  <ion-input type="text" [(ngModel)]="tabs" name="tabs">f</ion-input>
+<p *ngFor="let f of tabs">
+    {{f}}
+</p>
+</ion-content>
