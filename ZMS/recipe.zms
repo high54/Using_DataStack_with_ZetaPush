@@ -1,0 +1,20 @@
+/**
+* Recipe com.tech.whyme.STACK
+* Created on Tue May 09 09:29:16 CEST 2017 by Dev
+* Documentation in a source comment for a simple description
+*/
+recipe com.tech.whyme.STACK 1.0.0;
+
+/** Welcome message read from configuration */
+const WELCOME_MESSAGE = @com.tech.whyme.STACK.welcomeMessage;
+
+
+/** a simple authentication service */
+service auth = weak(__default);
+
+/** our code is run by this service */
+service code = macro(__default) for 'src';
+
+service stack = stack(__default).options({
+	stack_order:'fifo'
+});

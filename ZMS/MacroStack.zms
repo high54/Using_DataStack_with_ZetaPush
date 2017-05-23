@@ -1,0 +1,41 @@
+macroscript stackPush(string msg)
+{
+	
+var result = stack.push({
+	'stack' : 'my_stack',
+	'data' : { 'Message' : msg }
+}) loud;
+
+var guid = result.guid;
+
+} return { guid } 
+
+macroscript stackList()
+{
+	var list = stack.list({
+		'stack' :'my_stack'
+	});
+} return { list }
+macroscript stackSetListeners()
+{
+	stack.setListeners({
+		'stack' : 'my_stack',
+		'listeners' : [
+			__userKey,
+			'iib6q5j1dk3wYasPPRRGxA'
+		],
+		'owner':'EToOV-sZ_CfO7ZCw8xMzYA'
+	});
+	stack.setListeners({
+ 		'stack' : 'my_stack',
+ 		'listeners' : [
+ 			__userKey,
+ 			'EToOV-sZ_CfO7ZCw8xMzYA'
+ 		],
+ 		'owner':'iib6q5j1dk3wYasPPRRGxA'
+ });
+}
+macroscript stackGetListeners {
+	
+	var result = stack.getListeners({'stack' : 'my_stack'});
+} return {result}
