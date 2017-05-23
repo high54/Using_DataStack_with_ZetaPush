@@ -1,6 +1,6 @@
 # How to use Data Stack for real time chat with ZetaPush
 
-<span style="font-weight: 400;">In this tutorial we will simulate two users who wish to exchange messages.</span><iframe src="https://www.youtube.com/embed/mg0F6UlQ5-c" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<span style="font-weight: 400;">In this tutorial we will simulate two users who wish to exchange messages.</span>
 
 # Before we get started
 
